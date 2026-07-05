@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import HeaderTop from "@/components/HeaderTop";
+import HeaderMain from "@/components/HeaderMain";
+import Navbar from "@/components/Navbar";
 
 
 
@@ -19,7 +21,9 @@ export default function RootLayout({
       lang="en"
     >
       <body className="min-h-full flex flex-col">
-        <HeaderTop/>
+        <HeaderTop />
+        <HeaderMain />
+          <Navbar/>
         {children}
       </body>
     </html>
