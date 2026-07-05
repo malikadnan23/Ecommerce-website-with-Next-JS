@@ -1,7 +1,45 @@
+import { CiFacebook } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { AiFillTikTok } from "react-icons/ai";
+
 const HeaderTop = () => {
   return (
-    <div>
-      
+    <div className="border-b border-gray-200 hidden sm:block">
+          <div className="container py-4">
+              <div className="flex justify-between items-center">
+                  <div className="flex gap-4">
+                      <select className="text-gray-500 text-[12px] w-[70px]" name="currency" id="currency">
+                          <option value="USD $">USD $</option>
+                          <option value="UK £">UK £</option>
+                          <option value="French €">French €</option>
+                      </select>
+                       <select className="text-gray-500 text-[12px] w-[70px]" name="language" id="language">
+                          <option value="English">English</option>
+                          <option value="French">French</option>
+                     
+                      </select>
+                  </div>
+                 
+                  <div className="text-gray-500 text-[14px] uppercase">
+                      <b>Free Shipping</b> this week over - 55$
+                  </div>
+                 <div className="hidden lg:flex gap-1">
+                      <div className="header_top_icon_wrapper">
+                          <CiFacebook />
+                      </div>
+                       <div className="header_top_icon_wrapper">
+                          <FaInstagram />
+                      </div>
+                       <div className="header_top_icon_wrapper">
+                          <FaLinkedin />
+                      </div>
+                       <div className="header_top_icon_wrapper">
+                           <AiFillTikTok />
+                      </div>  
+                  </div>
+              </div>
+      </div>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import HeaderTop from "@/components/HeaderTop";
 
 
 
@@ -17,7 +18,10 @@ export default function RootLayout({
     <html
       lang="en"
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <HeaderTop/>
+        {children}
+      </body>
     </html>
   );
 }
